@@ -9,24 +9,42 @@
     <title>18+ Site</title>
 </head>
 
-<body>
+<body class="bg">
     <div class="title text-center">
         <div class="container">
+            <div class="row col-12">
+                <h1>NSFW Site</h1>
+            </div>
+        </div>
+    </div>
+    <div class="centerImage">
+        <div class="container">
             <div class="row">
-                <h1>Welcome to NSFW Site</h1>
+                <h3 class="dateResult text-center" id="dateResult"></h3>
+                <div class="leftside col-4"></div>
+                <div class="popUp col-4 d-flex justify-content-center">
+                    <img class="adult d-none" id="adult" src="media/404p2.png" alt="adult">
+                    <img class="senior d-none" id="senior" src="media/images.png" alt="Popicle lady">
+                    <img class="bye d-none" id="bye" src="media/bye.gif" alt="">
+                </div>
+                <div class="rightside col-4"></div>
+
             </div>
         </div>
     </div>
     <div class="ageTest text-center">
-        <div class="container">
+        <div class="leftside col-4"></div>
+        <div class="container col-4" id="ageContainer">
             <div class="row">
-                <label for="date" class="birth col-12">Enter a Birthday date:</label>
-                <input type="date" class="date col-12" id="date" name="date" value="date">
-                <button class="age col-6" value="age" id="age">Check Age</button>
-                <button class="reset col-6" value="reset" id="reset">Reset</button>
-                <p id="dateResult"></p>
+                <label for="date" class="birth">Enter a Birthday date:</label>
+                <input type="date" class="date" id="date" name="date">
+                <button class="pushable col-6" value="age" id="age"><span class="shadow"></span>
+                    <span class="edge"></span><span class="front">Check Age</span></button>
+                <button class="pushable col-6" value="reset" id="reset"><span class="shadow"></span>
+                    <span class="edge"></span><span class="front">Reset</span></button>
             </div>
         </div>
+        <div class="rightside col-4"></div>
     </div>
 
 </body>
